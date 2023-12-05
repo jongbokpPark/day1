@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <script>
+    // 문서가 로드되면 버틍을 접근한다.
+    window.addEventListener("load", function () {
+      console.log("문서가 로드되었어");
+
+      // 버튼을 클릭하면 왕버튼이로...
+      // document.querySelector("button").innerText = "왕버튼";
+      document.querySelector("button").addEventListener("click", function () {
+        document.querySelector("button").innerText = "왕 버튼";
+      });
+    });
+  </script>
+  <body>
+    <button>나 버튼</button>
+
+    <script>
+      // test();
+    </script>
+  </body>
+</html>
